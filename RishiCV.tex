@@ -1,0 +1,345 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+% Resume in Latex
+% Author : Rishi Lahoti
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+\input{glyphtounicode}
+\usepackage[margin=0.5in]{geometry}
+
+%----------FONT OPTIONS----------
+% Sans-serif Fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault,light]{inter}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage{roboto}
+% \usepackage[sfdefault,medium]{InriaSans}
+\usepackage[default]{sourcesanspro}
+
+% Serif Fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------
+%----------PAGE SETUP------------------
+% -------------------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{0.5pt}
+% \addtolength{\evensidemargin}{0.5pt}
+% \addtolength{\textwidth}{0.9in}
+% \addtolength{\topmargin}{-0.6in}
+% \addtolength{\textheight}{1.6in}
+
+% \addtolength{\oddsidemargin}{-.875in}
+% \addtolength{\evensidemargin}{-.875in}
+% \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% URL style
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% ----------- Definitions -----------------------
+\def\spaceforrole{ }
+\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00} % Highlights
+\sethlcolor{lightyellow} % Highlights
+
+%--------------- Custom commands -----------------------
+
+\newcommand{\sectionspace}{
+\vspace{-20pt}
+}
+
+\newcommand{\subheadingtitlevspace}{
+\vspace{-3pt}
+}
+
+
+% Resume Item
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+% Titles
+\newcommand{\titleItem}[1]{
+  % \textsl{\textbf{#1}}
+  \textbf{#1}
+}
+
+
+% Highlighting
+\newcommand{\highlight}[1]{
+  \textsl{\textbf{#1}}
+  % \hl{\textsl{\textbf{#1}}}
+  % \textbf{#1}
+  % \textsl{\hl{#1}}
+}
+
+% Resume Subheading
+\newcommand{\resumeSubheading}[4]{
+  \item
+     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
+      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{#3} & \textit{#4} \\
+%     \end{tabular*}\vspace{-8pt}
+% }
+
+
+
+% Resume Sub-sub heading
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+% Resume Project Heading
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{ #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+%Resume Subheading List
+\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%Resume Item List
+\newcommand{\resumeItemListStart}{
+% \vspace{-1pt}
+\begin{itemize}}
+\newcommand{\resumeItemListEnd}{
+% \vspace{-6pt}
+\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------
+
+\begin{document}
+
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\begin{flushleft}
+    \textbf{\large Rishi Lahoti} \\    
+    \textit{Banglore, Karnataka} $|$ 
+    \textit{+91-8982770027} $|$  
+    \href{https://rishilahoti.vercel.app/}{{\textit{Portfolio}}} $|$
+    \href{mailto:rishilahoti99@gmail.com}{{\textit{Mail}}} $|$ 
+    \href{https://www.linkedin.com/in/rishi-lahoti-665889166/}{{\textit{LinkedIn}}} $|$
+    \href{https://github.com/rishilahoti}{{\textit{GitHub}}}
+    \vspace{-8pt}
+\end{flushleft}
+
+% -------------------------------------
+%---------- PROFESSIONAL SUMMARY ------
+% -------------------------------------
+
+\section{Professional Summary}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     {Versatile developer with experience in Frontend Development and UI designing. Efficient in collaborating and communicating new ideas and opinions.} \\      
+    }}
+ \end{itemize}
+ \sectionspace
+
+
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\section{Certifications and Badges}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\titleItem{Front-end Development Badge} \emph{ $|$ LinkedIn Skill Assessment Badge}}{2023}
+      \resumeProjectHeading
+          {\titleItem{Programming with JavaScript} \emph{ $|$ Meta (Coursera)}}{September 2023}
+      \resumeProjectHeading
+          {\titleItem{HTML and CSS in Depth} \emph{$|$ Meta (Coursera)}}{September 2023}
+          \resumeProjectHeading
+          {\titleItem{Version Control} \emph{$|$ Meta (Coursera)}}{September 2023}
+    \resumeSubHeadingListEnd
+% -------------------------------------
+%----------TECHNICAL SKILLS------------
+% -------------------------------------
+
+\section{Technical Skills}
+\subheadingtitlevspace
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \titleItem{Languages}{: JavaScript, TypeScript, HTML, XML, JSON, CSS, Sass, Python} \\
+     \titleItem{Frameworks and Library}{: NexJs, Bootstrap, React} \\
+     \titleItem{DevOps}{: Git, AWS} \\
+     \titleItem{Cloud}{: AWS, Basic Google Cloud, Linux (Configuring and Managing)} \\
+     \titleItem{Others}{: Figma, Ligthroom, Photoshop}
+    }}
+ \end{itemize}
+\sectionspace
+
+
+
+    
+% -------------------------------------
+%----------EXPERIENCE------------------
+% -------------------------------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+           {\titleItem{{Engineering Intern}} $|$ \emph{Maiti Labs}}{Feb 2024 --Present}
+      \resumeItemListStart
+        \resumeItem{Working as Front-end Developer and Coordinator.}
+        \resumeItem{Working on building and optimizing company's website.}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+           {\titleItem{{Coordinator}} $|$ \emph{Potentia}}{October 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Leading, Managing content creation, Approvals and account handles.}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+           {\titleItem{{Web Developer}} $|$ \emph{QForest (Club)}}{Jan 2024 -- Present}
+      \resumeItemListStart    
+    \resumeItem{Part of the CORE WEB DEV team at QForest, Banglore. Working on the development of Hackathon Website and Club Page.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -------------------------------------
+%----------EDUCATION-------------------
+% -------------------------------------
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PES University}{Banglore}
+      {B.Tech in Electrical}{November 2021 -- May 2025} 
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+% -------------------------------------
+%----------PROJECTS--------------------
+% -------------------------------------
+
+ \section{Projects}    
+     \resumeSubHeadingListStart
+        \resumeProjectHeading
+           {\titleItem{\href{https://rishilahoti.vercel.app/}{Portfolio}} $|$ \emph{NexJs, Sass, JavaScript, CSS, HTML}}{Feb 2024}
+            \resumeItemListStart
+            \resumeItem{Reverse engineering and redesigning the website of Dennis Snellenberg. }
+           \resumeItemListEnd
+       \resumeProjectHeading
+           {\titleItem{\href{https://github.com/rishilahoti/Portfolio}{First Portfolio}} $|$ \emph{HTML, CSS, JavaScript, SMTP, FontAwesome}}{July 2023}
+            \resumeItemListStart
+            \resumeItem{All my projects in animated cards, skills in Skill Graph, contact support, all social media handles. }
+            \resumeItem{Fully responsive for every device. }
+           \resumeItemListEnd
+       \resumeProjectHeading
+        {\titleItem{\href{https://www.figma.com/community/file/1302966544079637232/sort-community}{SOR-T}} $|$ \emph{\ Figma}}{October 2023}
+            \resumeItemListStart
+            \resumeItem{Final UI/UX project on imaginary Potential Building Agency based on Crazy-8. }
+           \resumeItemListEnd
+        \resumeProjectHeading
+         {\titleItem{\href{https://github.com/rishilahoti/Image2Sketch}{Image To Sketch}} $|$ \emph{\ Python, JupyterNotebook, TKinter}}{May 2022}
+            \resumeItemListStart
+            \resumeItem{Designed and developed a simple code with GUI using Python and Jupyter Notebook. }
+            \resumeItem{Feature include image uploads. }
+           \resumeItemListEnd
+           \resumeProjectHeading
+         {\titleItem{\href{https://github.com/rishilahoti/veronica}{Simple AI(Veronica)}} $|$ \emph{\ Python, PyQt5.QtWidgets, PyQt5.QtWebEngineWidgets}}{June 2022}
+            \resumeItemListStart
+            \resumeItem{Reverse engineered a simple AI in Python using PyQt5.QtWidgets, PyQt5.QtWebEngineWidgets etc. . }
+            \resumeItem{Features include Time, Date, Song, Who is, Joke, Camera, and Location. API application Wolframalpha. Reference geeks for geeks and google. }
+           \resumeItemListEnd
+           \resumeProjectHeading
+         {\titleItem{\href{https://github.com/rishilahoti/react-movie-enhanced}{React Movie Search App}} $|$ \emph{\ React, OMDB API}}{Aug 2023}
+            \resumeItemListStart
+            \resumeItem{Tried to recreate movie search app. Movies can be add to favourite and remove from favourite. }
+            \resumeItem{Supports data stored on device. }
+           \resumeItemListEnd
+     \resumeSubHeadingListEnd
+
+% -------------------------------------
+%----------Co-Curricular---------------
+% -------------------------------------
+
+\section{Co-Curricular}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+           {\titleItem{{Q-Forest PESU}}}{Jan 2024 -- Present}
+      \resumeItemListStart    
+    \resumeItem{Part of the CORE WEB DEV team at QForest, Banglore. Working on the development of Hackathon Website and Club Page.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+           {\titleItem{{PIXELS Photography Club PESU}}}{Apr 2022 -- Present}
+      \resumeItemListStart    
+    \resumeItem{Event Photographer}
+    \resumeItemListEnd
+    \resumeProjectHeading
+           {\titleItem{Aikya PESU}}{May 2023 -- Present}
+      \resumeItemListStart    
+    \resumeItem{Event Photographer}
+    \resumeItemListEnd
+    \resumeProjectHeading
+           {\titleItem{E-Cell IIT, Bombay}}{July 2023 -- Present}
+      \resumeItemListStart    
+    \resumeItem{Campus Executive}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
